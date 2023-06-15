@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create DOM</title>
+</head>
+<body>
+    <section>
+
+    </section>
+</body>
+<script>
+    const section = document.querySelector('section')
+
+    const heading = document.createElement('h2')
+    section.append(heading)
+
+    heading.innerText = 'This is append element'
+    heading.setAttribute ('class', 'head1')
+    
+    const image = document.createElement('img')
+  section.append(image)
+    image.setAttribute ('src', './-jordan-1-shine.jpg')
+     image.setAttribute( 'alt', 'a  shoe')
+     image.setAttribute( 'width', '700')
+
+    const image2 = document.createElement('img')
+  section.append(image2)
+    image2.setAttribute ('src', './HIKK.jpg')
+     image2.setAttribute( 'alt', 'a  girl')
+     image2.setAttribute( 'width', '700')
+
+  document.body.style.background = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
+  document.body.style.color = 'white'
+
+    // document.body.style.background ='green'
+    // document.body.style.color ='gold'
+    
+
+</script>
+</html>
